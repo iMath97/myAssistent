@@ -1,0 +1,62 @@
+@import './colors';
+@import './header';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0; 
+	padding: 0; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.structural {
+	position: absolute;
+	left: -9999px;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.ir {
+	display: block;
+	background-size: 100%; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+
+// disable autofill style
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-text-fill-color: $white;
+	transition: background-color 5000s ease-in-out 0s;
+}
